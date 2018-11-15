@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="2a3d2946-1611-4c49-9237-93b6d00dbeb4"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="e8788a16-a23e-4fc2-bc4b-63b765a4b273">
+      <body>Functions
+</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="bd94dfea-8f25-44c4-89e7-7777ddae659a"
+          LastKnownName="Shopping"
+          LastKnownLocation="ModelingProject1.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d58f7bcb-288f-4ff1-9d45-980131dc1cda">
+      <body>Sub-Functions
+</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="464f39ca-4823-4fa8-9649-2ac9cc062da4"
+          LastKnownName="Buying"
+          LastKnownLocation="ModelingProject1.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="b3b76116-b7b7-4624-82ff-eb2e5679555a">
+      <body>Function that keeps the record of the products in the store to keep up with the requirements</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="5899f0dc-1358-4522-b9aa-a75bb1abc6c1"
+          LastKnownName="Store"
+          LastKnownLocation="ModelingProject1.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+        name="Website"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9f07ac41-3a32-4815-8e39-46264a278ba3"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7e5170c6-d278-4301-8416-c4ad6373916d"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bd94dfea-8f25-44c4-89e7-7777ddae659a"
+              LastKnownName="Shopping"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0cccc5bc-265a-4f98-a7fe-a05248f024cb"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ea6435f-5870-447d-9cb3-02b173b84394"
+                  name="Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="953241fc-44f5-47f7-be0f-5f4e35d25824"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Affiliation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1817c7f4-34ec-42d5-96dc-117050c22e06"
+              LastKnownName="Affiliation"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66dd56a9-03b3-44e5-ab59-04f3b8414c26"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd067388-1522-4621-a10d-8b766478caae"
+                  name="Affiliation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b1804b3c-c346-49a7-af06-835b9006df60"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Online Classes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d7fb3609-9ddd-4e6f-9929-c6cdcb83d077"
+              LastKnownName="Online Classes"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e673dd1a-7cfc-46ae-8a54-0f493f58436d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f504d057-35b7-403b-aba4-6c20bc38e6fd"
+                  name="Online Classes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bd94dfea-8f25-44c4-89e7-7777ddae659a"
+        name="Shopping"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="44be28cc-78cc-43f9-9e40-1c64aec04f37">
+            <useCaseMoniker
+              Id="464f39ca-4823-4fa8-9649-2ac9cc062da4"
+              LastKnownName="Buying"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+          <include
+            Id="c955139e-d912-45ef-87e6-78ebc1fe7af8">
+            <useCaseMoniker
+              Id="64795737-2739-4139-95b1-8eb55631148f"
+              LastKnownName="Selling"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+          <include
+            Id="7c7531cd-8fb2-4e41-bb3b-fd58656579d2">
+            <useCaseMoniker
+              Id="02b32940-2019-4f71-9b11-897095f8b359"
+              LastKnownName="Suggestions &amp; Review"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1817c7f4-34ec-42d5-96dc-117050c22e06"
+        name="Affiliation"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7155200a-375c-4095-8d63-2c449800146e">
+            <useCaseMoniker
+              Id="5515931e-8105-44b6-a514-75075f57ec1b"
+              LastKnownName="SignIn &amp; SignUp"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d7fb3609-9ddd-4e6f-9929-c6cdcb83d077"
+        name="Online Classes"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="93e03190-e74f-4236-9f6b-66ed21bda87d">
+            <useCaseMoniker
+              Id="2ef64512-d2ee-4805-a01a-0bc2963dd9dc"
+              LastKnownName="Tutorial"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="464f39ca-4823-4fa8-9649-2ac9cc062da4"
+        name="Buying"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="64795737-2739-4139-95b1-8eb55631148f"
+        name="Selling"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="02b32940-2019-4f71-9b11-897095f8b359"
+        name="Suggestions &amp; Review"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5515931e-8105-44b6-a514-75075f57ec1b"
+        name="SignIn &amp; SignUp"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f4cbe912-27a2-466d-baa6-40be87371dde">
+            <useCaseMoniker
+              Id="464f39ca-4823-4fa8-9649-2ac9cc062da4"
+              LastKnownName="Buying"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="3e426a02-ecca-4402-b0b7-17caf36c3e63">
+            <useCaseMoniker
+              Id="5515931e-8105-44b6-a514-75075f57ec1b"
+              LastKnownName="SignIn &amp; SignUp"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="16cda86d-054d-4e83-8aeb-2a6a4f5f95be">
+            <useCaseMoniker
+              Id="64795737-2739-4139-95b1-8eb55631148f"
+              LastKnownName="Selling"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="d236e1ba-2a3b-499f-92c2-c923a64c9725">
+            <useCaseMoniker
+              Id="02b32940-2019-4f71-9b11-897095f8b359"
+              LastKnownName="Suggestions &amp; Review"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="ad84e65f-edcf-417a-9abf-47ccfc5dc8ba">
+            <useCaseMoniker
+              Id="2ef64512-d2ee-4805-a01a-0bc2963dd9dc"
+              LastKnownName="Tutorial"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2ef64512-d2ee-4805-a01a-0bc2963dd9dc"
+        name="Tutorial"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="98a0c77c-53ed-4ee9-a699-20f3b59d1686"
+        name="Management       Team"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="33d27bab-0c81-42bb-b8b7-828b40914d94"
+            isDerived="false"
+            sourceEndRoleName="Management       Team"
+            targetEndRoleName="Store"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5899f0dc-1358-4522-b9aa-a75bb1abc6c1"
+              LastKnownName="Store"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e195c6b6-123c-4d43-9060-f4fd722c67a0"
+                  name="Management       Team"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="09b00c77-9ff5-4ac5-b9ca-645c5dbbf44f"
+                  name="Store"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5899f0dc-1358-4522-b9aa-a75bb1abc6c1"
+        name="Store"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="296e7941-a6c9-4b30-9840-3cfb7a0665d1">
+            <useCaseMoniker
+              Id="64795737-2739-4139-95b1-8eb55631148f"
+              LastKnownName="Selling"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+          <extend
+            Id="45b334b7-ebf2-440f-a4ca-548c69799dc3">
+            <useCaseMoniker
+              Id="464f39ca-4823-4fa8-9649-2ac9cc062da4"
+              LastKnownName="Buying"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="7b52588d-26e0-46f9-92c7-c275caf31bf1"
+            LastKnownName="Website"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
